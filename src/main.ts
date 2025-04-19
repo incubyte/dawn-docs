@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+    anchor.addEventListener('click', function(this: HTMLAnchorElement, e: Event) {
       e.preventDefault();
       const targetId = this.getAttribute('href');
-      if (targetId === '#') return;
+      if (!targetId || targetId === '#') return;
       
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
@@ -39,8 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollPosition = window.scrollY;
     
     document.querySelectorAll('section[id]').forEach(section => {
-      const sectionTop = section.offsetTop - 100;
-      const sectionBottom = sectionTop + section.offsetHeight;
+      const htmlSection = section as HTMLElement;
+      const sectionTop = htmlSection.offsetTop - 100;
+      const sectionBottom = sectionTop + htmlSection.offsetHeight;
       const sectionId = section.getAttribute('id');
       
       if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
