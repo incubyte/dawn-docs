@@ -1,0 +1,316 @@
+:root {
+  --primary-color: #6366f1;
+  --primary-dark: #4f46e5;
+  --primary-light: #818cf8;
+  --dark-color: #1e293b;
+  --light-color: #f8fafc;
+  --gray-color: #64748b;
+  --gray-light: #f1f5f9;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --danger-color: #ef4444;
+  --info-color: #3b82f6;
+  --border-radius: 0.5rem;
+  --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --transition: all 0.2s ease-in-out;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.7;
+  color: var(--dark-color);
+  margin: 0;
+  min-width: 320px;
+  background-color: var(--light-color);
+}
+
+/* Smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+/* Modern card styling */
+.card {
+  margin-bottom: 1.75rem;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  border: none;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+  font-weight: 600;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 1rem 1.25rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Sidebar styling */
+.list-group-item {
+  border: none;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0.25rem;
+  border-radius: 0.375rem !important;
+  transition: var(--transition);
+}
+
+.list-group-item:hover {
+  background-color: rgba(99, 102, 241, 0.05);
+  color: var(--primary-color);
+}
+
+.list-group-item.active {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+}
+
+/* Section headings */
+section h2 {
+  margin-top: 1rem;
+  margin-bottom: 1.75rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  position: relative;
+  display: inline-block;
+}
+
+section h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+/* Code and keyboard shortcuts */
+kbd {
+  background-color: var(--gray-light);
+  color: var(--dark-color);
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  padding: 0.2rem 0.4rem;
+  font-size: 0.875rem;
+  font-family: 'SF Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Sticky sidebar adjustments */
+.sticky-top {
+  top: 1.5rem;
+  z-index: 999;
+}
+
+/* Header styling */
+header {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+  box-shadow: var(--box-shadow);
+}
+
+header h1 {
+  font-weight: 700;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: white !important;
+  border-bottom: none;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  padding: 0.75rem 1rem !important;
+  color: var(--dark-color) !important;
+  border-radius: 0.375rem;
+  transition: var(--transition);
+}
+
+.navbar .nav-link:hover, 
+.navbar .nav-link:focus {
+  color: var(--primary-color) !important;
+  background-color: rgba(99, 102, 241, 0.05);
+}
+
+/* Make blockquotes more distinct */
+blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding: 1rem 1.5rem;
+  background-color: rgba(99, 102, 241, 0.05);
+  border-radius: 0.375rem;
+  color: var(--dark-color);
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+
+/* Alerts styling */
+.alert {
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 1rem 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.alert-info {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #1e40af;
+}
+
+.alert-warning {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: #92400e;
+}
+
+.alert-primary {
+  background-color: rgba(99, 102, 241, 0.1);
+  color: #4338ca;
+}
+
+/* Tables styling */
+.table {
+  font-size: 0.9rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.table th {
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  background-color: var(--gray-light);
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+/* Badge styling */
+.badge {
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  padding: 0.35em 0.65em;
+}
+
+.badge.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.badge.bg-success {
+  background-color: var(--success-color) !important;
+}
+
+.badge.bg-info {
+  background-color: var(--info-color) !important;
+}
+
+.badge.bg-warning {
+  background-color: var(--warning-color) !important;
+}
+
+.badge.bg-danger {
+  background-color: var(--danger-color) !important;
+}
+
+/* Footer styling */
+footer {
+  background: linear-gradient(135deg, #1e293b, #334155) !important;
+  padding: 3rem 0 !important;
+}
+
+footer h5 {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+footer p, footer li a {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+footer hr {
+  border-color: rgba(255, 255, 255, 0.1);
+  margin: 2rem 0;
+}
+
+/* Typography enhancements */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.025em;
+}
+
+.display-5 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.lead {
+  font-weight: 400;
+  color: var(--gray-color);
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Lists styling */
+ul li, ol li {
+  margin-bottom: 0.5rem;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.375rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .sticky-top {
+    position: static;
+  }
+  
+  section h2 {
+    font-size: 1.75rem;
+  }
+  
+  .display-5 {
+    font-size: 2.5rem;
+  }
+  
+  .navbar .nav-link {
+    padding: 0.5rem 0.75rem !important;
+  }
+}
+
+/* Add scroll smooth behavior and WebKit optimization */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix for the font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');

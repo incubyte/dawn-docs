@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/dawn_logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dawn DAW - User Documentation</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="text-white py-4">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <img src="/dawn_logo.png" alt="Dawn Logo" height="50">
+        <h1 class="ms-3 mb-0">Dawn DAW</h1>
+        <div class="ms-auto">
+          <span class="badge bg-primary">Documentation</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#getting-started">Getting Started</a></li>
+          <li class="nav-item"><a class="nav-link" href="#interface">Interface</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tracks">Tracks & Clips</a></li>
+          <li class="nav-item"><a class="nav-link" href="#effects">Effects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#collaboration">Workflow Tips</a></li>
+          <li class="nav-item"><a class="nav-link" href="#keyboard">Keyboard Shortcuts</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-lg-3 d-none d-lg-block">
+        <div class="sticky-top pt-3">
+          <div class="list-group">
+            <a href="#getting-started" class="list-group-item list-group-item-action">Getting Started</a>
+            <a href="#interface" class="list-group-item list-group-item-action">Interface</a>
+            <a href="#tracks" class="list-group-item list-group-item-action">Tracks & Clips</a>
+            <a href="#effects" class="list-group-item list-group-item-action">Effects</a>
+            <a href="#projects" class="list-group-item list-group-item-action">Projects</a>
+            <a href="#collaboration" class="list-group-item list-group-item-action">Workflow Tips</a>
+            <a href="#keyboard" class="list-group-item list-group-item-action">Keyboard Shortcuts</a>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-lg-9">
+        <div class="card shadow-sm mb-5">
+          <div class="card-body">
+            <div class="alert alert-info d-flex align-items-center" role="alert">
+              <i class="bi bi-info-circle-fill me-2"></i>
+              <div>
+                Welcome to the official documentation for Dawn DAW, a browser-based music production studio.
+              </div>
+            </div>
+            
+            <h1 class="display-5">Dawn Digital Audio Workstation</h1>
+            <p class="lead">A powerful browser-based music production studio.</p>
+            <hr>
+            <p>
+              Dawn is a full-featured Digital Audio Workstation (DAW) that runs directly in your web browser. Create, edit, and mix music projects with a professional-grade interface and powerful audio processing capabilities.
+            </p>
+          </div>
+        </div>
+
+        <section id="getting-started" class="mb-5">
+          <h2 class="border-bottom pb-2">Getting Started</h2>
+          <div class="row mt-4">
+            <div class="col-md-12">
+              <div class="card h-100">
+                <div class="card-header">
+                  <h5 class="mb-0">Getting Started with Dawn</h5>
+                </div>
+                <div class="card-body">
+                  <ol>
+                    <li>Open Dawn in your web browser.</li>
+                    <li>Create a new project or open an existing one from your device.</li>
+                    <li>Add tracks and import audio files.</li>
+                    <li>Arrange and edit your audio clips on the timeline.</li>
+                    <li>Add effects and adjust levels as needed.</li>
+                    <li>Save your project to continue working on it later.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card mt-4">
+            <div class="card-header bg-light">
+              <h5 class="mb-0">System Requirements</h5>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li><strong>Browser:</strong> Modern browser with Web Audio API support (Chrome, Firefox, Edge, Safari)</li>
+                <li><strong>Memory:</strong> 4GB RAM minimum (8GB recommended)</li>
+                <li><strong>Internet:</strong> Stable connection for collaboration mode</li>
+                <li><strong>Audio:</strong> Headphones or speakers for monitoring</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="interface" class="mb-5">
+          <h2 class="border-bottom pb-2">Interface Overview</h2>
+          
+          <div class="card mt-4">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h4>Main Sections</h4>
+                  <ul>
+                    <li><strong>Transport Bar:</strong> Play, stop, record controls</li>
+                    <li><strong>Timeline:</strong> Navigate through your project</li>
+                    <li><strong>Track List:</strong> Manage audio tracks</li>
+                    <li><strong>Mixer:</strong> Adjust volume, panning, and effects</li>
+                    <li><strong>Tool Panel:</strong> Various editing tools</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h4>File Menu</h4>
+                  <p>Access project operations from the File menu in the top bar:</p>
+                  <ul>
+                    <li><strong>New Project:</strong> Start a fresh project</li>
+                    <li><strong>Open Project:</strong> Load an existing project</li>
+                    <li><strong>Save Project:</strong> Save your current work</li>
+                    <li><strong>Export Mix:</strong> Create final audio file</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card mt-4">
+            <div class="card-header bg-light">
+              <h5 class="mb-0">Transport Bar</h5>
+            </div>
+            <div class="card-body">
+              <p>The transport bar provides controls for playback and recording:</p>
+              <ul>
+                <li><i class="bi bi-play-fill"></i> <strong>Play:</strong> Start playback from current position</li>
+                <li><i class="bi bi-stop-fill"></i> <strong>Stop:</strong> Stop playback</li>
+                <li><i class="bi bi-pause-fill"></i> <strong>Pause:</strong> Pause playback</li>
+                <li><i class="bi bi-record-fill text-danger"></i> <strong>Record:</strong> Start recording on selected track</li>
+                <li><i class="bi bi-arrow-clockwise"></i> <strong>Loop:</strong> Toggle loop mode</li>
+                <li><i class="bi bi-skip-start-fill"></i> <strong>Start:</strong> Jump to beginning</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="card mt-4">
+            <div class="card-header bg-light">
+              <h5 class="mb-0">Timeline</h5>
+            </div>
+            <div class="card-body">
+              <p>The timeline shows the time ruler and allows navigation through your project:</p>
+              <ul>
+                <li><strong>Click:</strong> Set playback position</li>
+                <li><strong>Drag:</strong> Scroll through project</li>
+                <li><strong>Mouse wheel:</strong> Zoom in/out</li>
+                <li><strong>Right-click:</strong> Context menu with additional options</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="tracks" class="mb-5">
+          <h2 class="border-bottom pb-2">Tracks & Clips</h2>
+          
+          <div class="card mt-4">
+            <div class="card-header bg-light">
+              <h5 class="mb-0">Working with Tracks</h5>
+            </div>
+            <div class="card-body">
+              <h5>Creating Tracks</h5>
+              <p>Click the <span class="badge bg-success">+ Add Track</span> button to create a new audio track.</p>
+              
+              <h5>Track Controls</h5>
+              <ul>
+                <li><strong>Mute (M):</strong> Temporarily silence the track</li>
+                <li><strong>Solo (S):</strong> Hear only this track</li>
+                <li><strong>Volume:</strong> Adjust track volume level</li>
+                <li><strong>Pan:</strong> Position sound in stereo field</li>
+                <li><strong>Effects:</strong> Add and configure audio effects</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="card mt-4">
+            <div class="card-header bg-light">
+              <h5 class="mb-0">Working with Clips</h5>
+            </div>
+            <div class="card-body">
+              <h5>Adding Audio Clips</h5>
+              <p>There are several ways to add audio clips to your project:</p>
+              <ul>
+                <li><strong>Drag & Drop:</strong> Drag audio files directly into the track area</li>
+                <li><strong>Import:</strong> Use the Import button to select audio files</li>
+                <li><strong>Record:</strong> Use the record button to create new audio</li>
+              </ul>
+              
+              <h5>Editing Clips</h5>
+              <ul>
+                <li><strong>Move:</strong> Drag clips to reposition them</li>
+                <li><strong>Trim:</strong> Drag edges to adjust clip length</li>
+                <li><strong>Split:</strong> Cut clips at playhead position</li>
+                <li><strong>Delete:</strong> Remove selected clips</li>
+                <li><strong>Volume:</strong> Adjust individual clip volume</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="effects" class="mb-5">
+          <h2 class="border-bottom pb-2">Effects Processing</h2>
+          
+          <div class="card mt-4">
+            <div class="card-header bg-light">
+              <h5 class="mb-0">Available Effects</h5>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card mb-3">
+                    <div class="card-header bg-info text-white">
+                      Reverb
+                    </div>
+                    <div class="card-body">
+                      <p>Adds space and ambience to your sound.</p>
+                      <ul>
+                        <li><strong>Size:</strong> Room size/decay time</li>
+                        <li><strong>Dampening:</strong> High frequency absorption</li>
+                        <li><strong>Mix:</strong> Dry/wet balance</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card mb-3">
+                    <div class="card-header bg-info text-white">
+                      Delay
+                    </div>
+                    <div class="card-body">
+                      <p>Creates echoes and repeats of the sound.</p>
+                      <ul>
+                        <li><strong>Time:</strong> Delay time in milliseconds</li>
+                        <li><strong>Feedback:</strong> Number of repeats</li>
+                        <li><strong>Mix:</strong> Dry/wet balance</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card mt-4">
+            <div class="card-header bg-light">
+              <h5 class="mb-0">Adding and Configuring Effects</h5>
+            </div>
+            <div class="card-body">
+              <ol>
+                <li>Select a track in the track list</li>
+                <li>Click the <span class="badge bg-primary">Effects</span> button</li>
+                <li>Select an effect from the dropdown menu</li>
+                <li>Adjust parameters using the sliders</li>
+                <li>Effects can be reordered by dragging</li>
+                <li>Toggle the power button to bypass an effect</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="mb-5">
+          <h2 class="border-bottom pb-2">Project Management</h2>
+          
+          <div class="card mt-4">
+            <div class="card-header bg-light">
+              <h5 class="mb-0">Project Operations</h5>
+            </div>
+            <div class="card-body">
+              <h5>Creating a New Project</h5>
+              <p>Click <strong>File → New Project</strong> to start a blank project.</p>
+              
+              <h5>Saving Projects</h5>
+              <ol>
+                <li>Click <strong>File → Save Project</strong> or press <kbd>Ctrl</kbd>+<kbd>S</kbd></li>
+                <li>Enter a name for your project</li>
+                <li>The project will be saved to your local device</li>
+                <li>Projects are saved as .dawn.zip files containing all audio and project data</li>
+              </ol>
+              
+              <h5>Opening Projects</h5>
+              <ol>
+                <li>Click <strong>File → Open Project</strong> or press <kbd>Ctrl</kbd>+<kbd>O</kbd></li>
+                <li>Select a .dawn.zip file from your device</li>
+                <li>The project will load with all tracks, clips, and effects</li>
+              </ol>
+              
+              <h5>Exporting Audio</h5>
+              <ol>
+                <li>Click <strong>File → Export Mix</strong></li>
+                <li>Choose export format (WAV, MP3)</li>
+                <li>Select export range (entire project or selection)</li>
+                <li>Click Export</li>
+                <li>Save the rendered audio file to your device</li>
+              </ol>
+            </div>
+          </div>
+          
+          <div class="card mt-4">
+            <div class="card-header bg-light">
+              <h5 class="mb-0">Project Tips</h5>
+            </div>
+            <div class="card-body">
+              <h5>Organizing Your Projects</h5>
+              <ul>
+                <li><strong>Name tracks clearly:</strong> Use descriptive names for all tracks</li>
+                <li><strong>Use markers:</strong> Add markers at important points in your timeline</li>
+                <li><strong>Save regularly:</strong> Prevent data loss by saving frequently</li>
+                <li><strong>Backup projects:</strong> Keep backups of important projects</li>
+                <li><strong>Version your work:</strong> Save iterations with version numbers for important changes</li>
+              </ul>
+              
+              <h5>Optimizing Performance</h5>
+              <ul>
+                <li>Close other browser tabs for better performance</li>
+                <li>Use headphones for better monitoring</li>
+                <li>Bounce tracks to audio when using many effects</li>
+                <li>Split long projects into smaller segments</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="collaboration" class="mb-5">
+          <h2 class="border-bottom pb-2">Workflow Tips</h2>
+          
+          <div class="card mt-4">
+            <div class="card-header bg-light">
+              <h5 class="mb-0">Efficient Music Production</h5>
+            </div>
+            <div class="card-body">
+              <h5>Planning Your Project</h5>
+              <ul>
+                <li><strong>Start with structure:</strong> Plan your song sections before detailed work</li>
+                <li><strong>Create a template:</strong> Set up common tracks you use in every project</li>
+                <li><strong>Focus on one section:</strong> Complete one part of your song before moving to the next</li>
+                <li><strong>Take breaks:</strong> Rest your ears periodically to maintain perspective</li>
+              </ul>
+              
+              <h5>File Management</h5>
+              <ul>
+                <li><strong>Organize samples:</strong> Keep your audio files in organized folders</li>
+                <li><strong>Naming conventions:</strong> Use consistent naming for all files and tracks</li>
+                <li><strong>Archive completed projects:</strong> Keep backups of finished work</li>
+                <li><strong>Export stems:</strong> Save individual track renders for future remixing</li>
+              </ul>
+              
+              <h5>Mixing Tips</h5>
+              <ul>
+                <li><strong>Start with levels:</strong> Balance volumes before adding effects</li>
+                <li><strong>Use reference tracks:</strong> Compare your mix to professional productions</li>
+                <li><strong>Less is more:</strong> Be conservative with effects to maintain clarity</li>
+                <li><strong>Check on different systems:</strong> Test your mix on various speakers/headphones</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="card mt-4">
+            <div class="card-header bg-light">
+              <h5 class="mb-0">Working with Others</h5>
+            </div>
+            <div class="card-body">
+              <p>While Dawn currently works as a single-user application, you can still collaborate with others by:</p>
+              <ul>
+                <li><strong>Sharing project files:</strong> Exchange .dawn.zip files via email or file sharing</li>
+                <li><strong>Exporting stems:</strong> Share individual track renders for others to work with</li>
+                <li><strong>Version control:</strong> Use numbered versions to track project iterations</li>
+                <li><strong>Documentation:</strong> Include notes about your project for collaborators</li>
+                <li><strong>Standardize formats:</strong> Agree on audio file formats and project settings</li>
+              </ul>
+              <div class="alert alert-info">
+                <i class="bi bi-info-circle-fill me-2"></i>
+                <strong>Coming Soon:</strong> We're working on adding real-time collaboration features in a future update.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="keyboard" class="mb-5">
+          <h2 class="border-bottom pb-2">Keyboard Shortcuts</h2>
+          
+          <div class="card mt-4">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5>Transport Controls</h5>
+                  <table class="table table-striped">
+                    <tbody>
+                      <tr>
+                        <td><kbd>Space</kbd></td>
+                        <td>Play/Pause</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>Enter</kbd></td>
+                        <td>Stop</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>R</kbd></td>
+                        <td>Record</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>Home</kbd></td>
+                        <td>Jump to start</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>End</kbd></td>
+                        <td>Jump to end</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>L</kbd></td>
+                        <td>Toggle loop mode</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  <h5>Project Management</h5>
+                  <table class="table table-striped">
+                    <tbody>
+                      <tr>
+                        <td><kbd>Ctrl</kbd>+<kbd>N</kbd></td>
+                        <td>New project</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>Ctrl</kbd>+<kbd>O</kbd></td>
+                        <td>Open project</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>Ctrl</kbd>+<kbd>S</kbd></td>
+                        <td>Save project</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></td>
+                        <td>Save project as</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>Ctrl</kbd>+<kbd>E</kbd></td>
+                        <td>Export mix</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>Ctrl</kbd>+<kbd>I</kbd></td>
+                        <td>Import audio</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+                <div class="col-md-6">
+                  <h5>Editing</h5>
+                  <table class="table table-striped">
+                    <tbody>
+                      <tr>
+                        <td><kbd>Ctrl</kbd>+<kbd>Z</kbd></td>
+                        <td>Undo</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>Ctrl</kbd>+<kbd>Y</kbd></td>
+                        <td>Redo</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>Ctrl</kbd>+<kbd>X</kbd></td>
+                        <td>Cut selection</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>Ctrl</kbd>+<kbd>C</kbd></td>
+                        <td>Copy selection</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>Ctrl</kbd>+<kbd>V</kbd></td>
+                        <td>Paste</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>Delete</kbd></td>
+                        <td>Delete selection</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>Ctrl</kbd>+<kbd>A</kbd></td>
+                        <td>Select all</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>S</kbd></td>
+                        <td>Split clip at playhead</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  <h5>View</h5>
+                  <table class="table table-striped">
+                    <tbody>
+                      <tr>
+                        <td><kbd>+</kbd> / <kbd>-</kbd></td>
+                        <td>Zoom in/out</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>0</kbd></td>
+                        <td>Reset zoom</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>F</kbd></td>
+                        <td>Fit to screen</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>M</kbd></td>
+                        <td>Toggle mixer view</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>E</kbd></td>
+                        <td>Toggle effects panel</td>
+                      </tr>
+                      <tr>
+                        <td><kbd>T</kbd></td>
+                        <td>Add new track</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Dawn DAW Documentation</h5>
+          <p>For users of the Dawn Digital Audio Workstation.</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Resources</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Video Tutorials</a></li>
+            <li><a href="#" class="text-white">Community Forums</a></li>
+            <li><a href="#" class="text-white">Technical Support</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Connect</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">GitHub</a></li>
+            <li><a href="#" class="text-white">Twitter</a></li>
+            <li><a href="#" class="text-white">Discord</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        <p>&copy; 2023 Dawn DAW. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
